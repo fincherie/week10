@@ -1,0 +1,44 @@
+// Base Typography Stylesheet
+// This is where your base typography will go
+// ========================================
+
+h1, h2, h3, h4, h5, h6 {
+  color: purple;
+}
+
+h1 {
+ @include font-type($primary-font, normal, 700);
+ font-family: $primary-font;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+
+}
+
+a {
+
+
+  &:hover {
+
+  }
+}

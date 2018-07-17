@@ -1,0 +1,61 @@
+// Base Layout Stylesheet
+// This is where your layout of the project will go
+// ========================================
+
+body {
+  background-color: $pink;
+
+  @include media($medium) {
+    // background-color: $white;
+  }
+
+  @include media($large) {
+    // background-color: $black;
+  }
+
+  @include media($extra-large) {
+    // background-color: $green;
+  }
+}
+
+.nav {
+  background-color: black;
+  padding: $spacer-m;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+
+    &__item {
+      display: inline-block;
+      color: $white;
+      font-size: 20px;
+      font-family: $primary-font;
+
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.main {
+  padding: $spacer-m;
+
+  &__section {
+    margin: $spacer-lg $reset-0;
+
+    &--index {
+
+    }
+  }
+}
+
+.item-container {
+    margin: $spacer-m $reset-0;
+}
+
+.footer {
+
+}

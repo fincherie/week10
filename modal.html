@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <!-- include your logo -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list__item">
+            <a href="alert-new.html">Alert</a>
+          </li>
+          <li class="nav__list__item">
+            <a href="modal-new.html">Modal</a>
+          </li>
+          <li class="nav__list__item">
+            <a href="popover-new.html">Popover</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="guide__section-group">
+          <button class="button--primary modal__trigger-btn">Click for Modal</button>
+          <div class="modal" aria-hidden="true">
+            <div class="modal__overlay">
+              <div class="modal__container">
+                <div class="modal__body">
+                  <a href="#" role="button" class="modal__close">
+                    x
+                  </a>
+                  <header class="modal__header">
+                    <h3 class="title">Modal Title</h3>
+                    <p class="modal-intro">Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.</p>
+                  </header>
+                  <div>
+                    <p class="modal-content">Modal Content goes here.</p>
+                    <div class="modal__actions">
+                      <ul class="modal__actions-list">
+                        <li class="modal__actions-item">
+                          <button class="button--default button--full modal__close">Cancel</button>
+                        </li>
+                        <li class="modal__actions-item">
+                          <button class="button--danger button--full">Delete</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+// Button Component Stylesheet
+// ========================================
+.button {
+
+  &--primary {
+    @include button($black, $pink);
+
+    &:hover {
+      background-color: $blue;
+    }
+  }
+
+  &--secondary {
+    @include button($green, $white);
+
+    &:hover {
+      background-color: $blue;
+    }
+  }
+
+  &--disabled {
+    @include button($grey, $white);
+  }
+}
