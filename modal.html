@@ -11,49 +11,60 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__list__item">
-            <a href="alert-new.html">Alert</a>
+            <a href="alert.html">Alert</a>
           </li>
           <li class="nav__list__item">
-            <a href="modal-new.html">Modal</a>
+            <a href="modal.html">Modal</a>
           </li>
           <li class="nav__list__item">
-            <a href="popover-new.html">Popover</a>
+            <a href="popover.html">Popover</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main">
-      <div class="guide__section-group">
-          <button class="button--primary modal__trigger-btn">Click for Modal</button>
-          <div class="modal" aria-hidden="true">
-            <div class="modal__overlay">
-              <div class="modal__container">
-                <div class="modal__body">
-                  <a href="#" role="button" class="modal__close">
-                    x
-                  </a>
-                  <header class="modal__header">
-                    <h3 class="title">Modal Title</h3>
-                    <p class="modal-intro">Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.</p>
-                  </header>
-                  <div>
-                    <p class="modal-content">Modal Content goes here.</p>
-                    <div class="modal__actions">
-                      <ul class="modal__actions-list">
-                        <li class="modal__actions-item">
-                          <button class="button--default button--full modal__close">Cancel</button>
-                        </li>
-                        <li class="modal__actions-item">
-                          <button class="button--danger button--full">Delete</button>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
+<button id="trigger" class="button--primary trigger">Click for Modal</button>
+<div class="modal" aria-hidden="true">
+
+<div class="modal__container">
+  <img src="images/icon-close.svg" alt="close" class="modal__close"/>
+  <header class="modal__header">
+
+  <h3>Log in</h3>
+  <p>Please log in</p>
+  </header>
+  <form>
+    <input name="email" type="email" placeholder="john@aol.com" class="input modal__input"/>
+    <input name="password" type="password" class="input modal__input" />
+<ul class="modal__action-list">
+  <li class="modal__action-list__item">
+    <button class="button--secondary" >Cancel</button>
+
+  </li>
+  <li class="modal__action-list__item">
+
+    <input type="submit" value="submit" class="button--primary" />
+  </li>
+</ul>
+
+
+  </form>
+</div>
+
+
+</div>
+
+
+
+
     </main>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+    <script src="js/modal.js"></script>
+
   </body>
 </html>
